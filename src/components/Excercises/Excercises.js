@@ -13,7 +13,7 @@ const Excercises = ({ excercise, handleAddToCart }) => {
         <p>Time required: {time}s</p>
       </div>
       <button onClick={() => handleAddToCart(excercise)} className="btn-cart">
-        <p>Add to cart</p>
+        <p>Add To List</p>
       </button>
     </div>
   );
