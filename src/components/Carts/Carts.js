@@ -39,6 +39,19 @@ const Carts = ({ cart }) => {
           <h2>25yrs Age</h2>
         </div>
       </div>
+      <div className="exercise-details">
+        <h2>Excercise Details</h2>
+        <div className="exercise-time">
+          <p>
+            Exercise time <span className="same">200 s</span>
+          </p>
+        </div>
+        <div className="break-time">
+          <p>
+            Break time <span className="same">15 s</span>
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

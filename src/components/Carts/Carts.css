@@ -14,3 +14,19 @@
   padding: 10px;
   border-radius: 10px;
 }
+.exercise-time,
+.break-time {
+  background-color: #ddd;
+  padding: 5px;
+  border-radius: 10px;
+}
+.exercise-time,
+.break-time p {
+  padding-left: 10px;
+}
+.break-time {
+  margin-top: 10px;
+}
+.same {
+  padding-left: 90px;
+}
