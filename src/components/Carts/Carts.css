@@ -1,5 +1,16 @@
-.cart{
-    position: sticky;
-    top: 0;
-    padding: 30px 20px;
+.cart {
+  position: sticky;
+  top: 0;
+  padding: 30px 20px;
+}
+.profile p {
+  margin-top: -22px;
+  font-size: 12px;
+}
+.myself {
+  display: flex;
+  background-color: white;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
 }
