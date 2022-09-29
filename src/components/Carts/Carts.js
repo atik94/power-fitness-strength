@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Carts.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Carts = ({ cart }) => {
   //console.log(cart);
   let total = 0;
@@ -16,9 +18,13 @@ const Carts = ({ cart }) => {
     const getItems = localStorage.getItem("item");
     setBreak(getItems);
   };
+  const showToastMessage = () => {
+    toast.success("Activity complete successfully !", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+  };
   return (
     <div className="cart">
-      <p>price : {total}s</p>
       <div>
         <input onClick={timeChange} type="text" value={10} />
         <input onClick={timeChange} type="text" value={20} />
@@ -43,7 +49,7 @@ const Carts = ({ cart }) => {
         <h2>Excercise Details</h2>
         <div className="exercise-time">
           <p>
-            Exercise time <span className="same">200 s</span>
+            Exercise time <span className="same">{total} s</span>
           </p>
         </div>
         <div className="break-time">
@@ -51,6 +57,12 @@ const Carts = ({ cart }) => {
             Break time <span className="same">15 s</span>
           </p>
         </div>
+      </div>
+      <div className="activity-completed">
+        <button onClick={showToastMessage} className="activity-btn">
+          Activity Completed
+        </button>
+        <ToastContainer />
       </div>
     </div>
   );

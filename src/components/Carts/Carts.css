@@ -30,3 +30,14 @@
 .same {
   padding-left: 90px;
 }
+.activity-completed {
+  margin-top: 40px;
+}
+.activity-btn {
+  background-color: orange;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
