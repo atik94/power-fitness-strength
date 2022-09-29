@@ -14,6 +14,23 @@
   padding: 10px;
   border-radius: 10px;
 }
+
+.add-break {
+  display: flex;
+  margin-top: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+.add-break input {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
 .exercise-time,
 .break-time {
   background-color: #ddd;

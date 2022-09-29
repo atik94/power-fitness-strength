@@ -25,11 +25,6 @@ const Carts = ({ cart }) => {
   };
   return (
     <div className="cart">
-      <div>
-        <input onClick={timeChange} type="text" value={10} />
-        <input onClick={timeChange} type="text" value={20} />
-        <p>{breaks}</p>
-      </div>
       <div className="profile">
         <h2>Atikur Rahman</h2>
         <p>Dhaka, Bangladesh</p>
@@ -45,6 +40,18 @@ const Carts = ({ cart }) => {
           <h2>25yrs Age</h2>
         </div>
       </div>
+
+      <div className="div">
+        <h2>Add A Break</h2>
+        <div className="add-break">
+          <input onClick={timeChange} type="text" value={10} />
+          <input onClick={timeChange} type="text" value={20} />
+          <input onClick={timeChange} type="text" value={30} />
+          <input onClick={timeChange} type="text" value={40} />
+          <input onClick={timeChange} type="text" value={50} />
+        </div>
+      </div>
+
       <div className="exercise-details">
         <h2>Excercise Details</h2>
         <div className="exercise-time">
@@ -54,7 +61,7 @@ const Carts = ({ cart }) => {
         </div>
         <div className="break-time">
           <p>
-            Break time <span className="same">15 s</span>
+            Break time <span className="same">{breaks} s</span>
           </p>
         </div>
       </div>
