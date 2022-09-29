@@ -1,0 +1,18 @@
+.fitness-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.excercise-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 46px;
+  margin: 100px 50px;
+}
+.cart-container {
+  background-color: cyan;
+}
+@media screen and (max-width: 1100px) {
+  .excercise-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
